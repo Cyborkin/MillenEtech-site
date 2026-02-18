@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mallo — Meal Planning & Grocery Assistant</title>
+  <meta name="description" content="Mallo is a meal planning and grocery assistant built by MillenEtech. Create recipes, plan your week, and build a consolidated grocery list." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./">
+        <div class="logo" aria-hidden="true"><span>🍡</span></div>
+        <div>
+          <div class="name">Mallo</div>
+          <span class="sub">by MillenEtech</span>
+        </div>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a class="pill" href="#about">About</a>
+        <a class="pill" href="#contact">Contact</a>
+        <a class="pill" href="privacy.html">Privacy</a>
+        <a class="pill" href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1 class="h1">Meal planning that actually feels easy.</h1>
+          <p class="lead">
+            Mallo helps you organize recipes, plan meals for the week, and build a consolidated grocery list.
+            Built by <b>MillenEtech</b>.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Contact us</a>
+            <a class="btn ghost" href="privacy.html">View privacy policy</a>
+          </div>
+
+          <div class="kpis" aria-label="Highlights">
+            <div class="kpi">
+              <b>Plan your week</b>
+              <span>Create a simple schedule for breakfast, lunch, dinner, and snacks.</span>
+            </div>
+            <div class="kpi">
+              <b>Save recipes</b>
+              <span>Store recipes you love and keep ingredients organized.</span>
+            </div>
+            <div class="kpi">
+              <b>Build groceries</b>
+              <span>Generate a combined list from planned meals to reduce duplicates.</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card pad">
+          <h2 style="margin:0 0 10px;">Quick facts</h2>
+          <div class="notice">
+            This site exists to support Apple Developer Program organization enrollment and to provide app support and privacy information.
+          </div>
+          <div style="margin-top:12px; color: var(--muted); font-size: 14px;">
+            <p style="margin: 10px 0 0;"><b>Company:</b> MillenEtech</p>
+            <p style="margin: 6px 0 0;"><b>Product:</b> Mallo (Meal Planning & Grocery Assistant)</p>
+            <p style="margin: 6px 0 0;"><b>Support:</b> <span id="supportEmail">support@millenetech.com</span></p>
+            <p style="margin: 6px 0 0;"><b>Privacy:</b> <a href="privacy.html">Privacy Policy</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Mallo</h2>
+      <div class="grid">
+        <div class="card feature">
+          <h3>Recipe management</h3>
+          <p>Keep recipes, ingredients, and instructions in one place for quick access.</p>
+        </div>
+        <div class="card feature">
+          <h3>Weekly planning</h3>
+          <p>Plan meals across the week so you know what’s coming and what you need.</p>
+        </div>
+        <div class="card feature">
+          <h3>Grocery consolidation</h3>
+          <p>Turn your plan into a practical grocery list that minimizes repeats.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card pad">
+        <p style="margin:0; color: var(--muted);">
+          For support, questions, or account help, email us at:
+          <b><a href="mailto:support@millenetech.com">support@millenetech.com</a></b>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> MillenEtech. All rights reserved.</div>
+      <div class="small-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

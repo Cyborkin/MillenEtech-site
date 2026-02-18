@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mallo Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the Mallo app by MillenEtech." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./">
+        <div class="logo" aria-hidden="true"><span>🍡</span></div>
+        <div>
+          <div class="name">Mallo</div>
+          <span class="sub">by MillenEtech</span>
+        </div>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a class="pill" href="./#contact">Contact</a>
+        <a class="pill" href="support.html">Support</a>
+        <a class="pill" href="./">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1>Privacy Policy</h1>
+    <div class="meta">Last updated: <span id="lastUpdated"></span></div>
+
+    <p>
+      This Privacy Policy explains how <b>MillenEtech</b> (“we”, “us”) collects, uses, and shares information when you use
+      the <b>Mallo</b> mobile application (“App”).
+    </p>
+
+    <hr />
+
+    <h2>Information we collect</h2>
+    <ul>
+      <li><b>Account information</b> (if you create an account): email address and basic profile details.</li>
+      <li><b>App content you provide</b>: recipes, meal plans, grocery list items, and preferences you enter.</li>
+      <li><b>Diagnostics</b>: app performance data and crash logs to improve reliability (when enabled by the platform).</li>
+    </ul>
+
+    <h2>How we use information</h2>
+    <ul>
+      <li>Provide core app functionality (meal planning, recipe storage, grocery list generation).</li>
+      <li>Maintain security, prevent abuse, and troubleshoot issues.</li>
+      <li>Improve features and fix bugs.</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>
+      We do not sell your personal information. We may share limited information with service providers used to operate the App
+      (for example, hosting and authentication providers) strictly to provide the service.
+    </p>
+
+    <h2>Data retention</h2>
+    <p>
+      We retain information for as long as needed to provide the App or as required by law.
+      You may request deletion of your account and associated data by contacting us.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You may update or delete certain content within the App.</li>
+      <li>You may request account deletion by emailing <b>support@millenetech.com</b>.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>The App is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, contact: <b>support@millenetech.com</b></p>
+  </main>
+
+  <script>
+    const d = new Date();
+    const fmt = d.toLocaleDateString(undefined, {year:'numeric', month:'long', day:'numeric'});
+    document.getElementById('lastUpdated').textContent = fmt;
+  </script>
+</body>
+</html>
